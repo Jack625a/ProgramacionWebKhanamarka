@@ -1,3 +1,6 @@
+html,body{
+    margin: 0;
+}
 header{
     background:rgb(27, 26, 26);
     width: 100%;
@@ -20,6 +23,7 @@ nav ul li{
 nav ul li a{
     display: block;
     padding: 20px;
+    paddin
     color:aliceblue;
     text-decoration: none;
 }
@@ -29,4 +33,17 @@ nav ul li:hover{
 }
 nav ul li a:hover{
     color: black;
+}
+.logo{
+    float: left;
+    display: inline-block;
+    width: 50px;
+  
+}
+.logo img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    padding-right: 30px;
 }

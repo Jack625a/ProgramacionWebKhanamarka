@@ -41,7 +41,8 @@ document.write("La suma de "+numero1+ " + "+numero2+ "= "+suma)
 //Funcion obtencion de datos por teclado con JavaScript
 var nombre3=prompt("Ingrese su nombre: ")
 document.write("<br>"+nombre3)
-
+document.write("<br>")
+document.write("<br>")
 //Ejercicio 1. Calcular la suma de 2 numero ingresados por teclado
 document.write("Ejercicio 1. Calcular la suma de 2 numero ingresados por teclado")
 var num1=parseFloat(prompt("Ingrese un numero"))
@@ -54,6 +55,7 @@ document.write("<br>"+sumar)
 //Menor que <, <=
 //Igual que ==
 //Diferente que !=
+document.write("<br>")
 //Ejercicio 2. Verificar entre los 2 numeros con los operadores logicos
 document.write("Ejercicio 2. Verificar entre los 2 numeros con los operadores logicos")
 document.write("<br>")
@@ -76,6 +78,7 @@ document.write(num1!=num2)
 //}
 //Ejercicio 3. Comparar entre los 2 numeros cual es el mayor
 document.write("<br>")
+document.write("<br>")
 document.write("Ejercicio 3. Comparar entre los 2 numeros cual es el mayor")
 document.write("<br>")
 if (num1>num2){
@@ -84,6 +87,7 @@ if (num1>num2){
     document.write("El numero ",num2, " es mayor que ",num1)
 }
 //Ejercicio 4. Crear un menu para una calculadora simple
+document.write("<br>")
 document.write("<br>")
 document.write("Ejercicio 4. Crear un menu para una calculadora simple")
 document.write("<br>")
@@ -125,6 +129,57 @@ else{
 }
 
 
+//Ejercicio 5. Crear un menu para una calculadora simple con Condicional Switch
+document.write("<br>")
+document.write("<br>")
+document.write("Ejercicio 5. Crear un menu para una calculadora simple con Condicional Switch")
+seleccionSwitch=parseInt(prompt("Ingrese la operacion, 1. Sumar, 2. Restar, 3. Multiplicar, 4. Dividir "))
+var numm1Switch=parseFloat(prompt("Ingrese un numero"))
+var numm2Switch=parseFloat(prompt("Ingrese un numero"))
+switch (seleccionSwitch){
+    case 1:
+    //sumar
+    var sumar=numm1Switch+numm2Switch
+    document.write("<br>")
+    document.write("La suma de ",numm1Switch,"+",numm2Switch,"= ",sumar)
+    break
+    case 2:
+    //resta
+    var restar=numm1Switch-numm2Switch
+    document.write("<br>")
+    document.write("La resta de ",numm1Switch,"-",numm2Switch,"= ",restar)
+    break
+    case 3:
+    //multiplicacion
+    var multiplica=numm1Switch*numm2Switch
+    document.write("<br>")
+    document.write("La multiplicacion de ",numm1Switch,"x",numm2Switch,"= ",multiplica)
+    break
+    case 4:
+    //division
+    var dividi=numm1Switch/numm2Switch
+    document.write("<br>")
+    document.write("La division de ",numm1Switch,"/",numm2Switch,"= ", dividi)
+    break
+    default: 
+    alert("Error operacion no valida")
+}
 
 //2. BUCLES
+//2.1. Bucles Repetitivos
+//Ejercicio 6. Mostrar los numeros del 1 al 100
+document.write("<br>")
+document.write("<br>")
+document.write("Ejercicio 6. Mostrar los numeros del 1 al 100")
+var bucle=1
+while(bucle<=100){
+    document.write("<br>")
+    document.write(bucle)
+    bucle=bucle+1
+}
+
+
+
+
+//2.2. Bucles Interativos
 

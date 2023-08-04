@@ -182,4 +182,45 @@ while(bucle<=100){
 
 
 //2.2. Bucles Interativos
-
+//for bucle iterativo
+//1. variable que realiZara la iteracion
+//2. condicion para el rango de la iteraacion
+//3. Incremento ++ o Decremento --
+//var a=0
+//a++
+//a=a+1
+//a--
+//a=a-1
+document.write("<br>")
+document.write("Ejemplo Bucle For")
+for(var i=1;i<=10;i++){
+    document.write("<br>")
+    document.write(i)
+}
+//Ejercicio 7. Mostrar los numeros del 1 al 100 con el bucle FOR
+document.write("<br>")
+document.write("Ejercicio 7. Mostrar los numeros del 1 al 100 con el bucle FOR")
+for(var i=1;i<=100;i++){
+    document.write("<br>")
+    document.write(i)
+}
+//Ejercicio 8. Mostrar los numeros pares del 1 al 100 con el bucle For
+document.write("<br>")
+document.write("Ejercicio 8. Mostrar los numeros pares del 1 al 100 con el bucle For")
+for(var i=0;i<=100;i++){
+    if(i%2==0)
+    {
+        document.write("<br>")
+        document.write(i)
+    }   
+}
+//Ejercicio 9. Mostrar los numeros impares del 1 al 100 con el bucle For
+document.write("<br>")
+document.write("Ejercicio 9. Mostrar los numeros impares del 1 al 100 con el bucle For")
+for(var i=1;i<=100;i++){
+    if(i%2!=0)
+    {
+        document.write("<br>")
+        document.write(i)
+    }
+}

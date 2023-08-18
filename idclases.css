@@ -1,0 +1,22 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+.productos{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.producto{
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+.carrito{
+    margin-top: 20px;
+    text-align: center;
+}

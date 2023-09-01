@@ -14,38 +14,48 @@
             <h2>Producto 1</h2>
             <img src="https://oruro.solutekla.com/photo/1/samsung/celulares/celular_samsung_galaxy_a30_azul_pantalla_64_infinityu_full_hd_color_super_amoled_cmara_principal_5_mpx_16mpx_cmara_frontal_16_mp_ram_4gb_memoria_64_gb_expandible_hasta_512_gb_red_4g_lte__octacore_18ghz_16_ghz_android_90_pie_batera_4000mahreconocimiento_facial_escaner_de_huellas__dimensiones_1585_x_747_x_77_mm_peso_166gr_diseo_impresionante_pantalla_infinita_asistente_personal_bixby_garanta_un_ao/celular_samsung_galaxy_a30_azul_pantalla_64_infinityu_full_hd_color_super_amoled_cmara_principal_5_mpx_16mpx_cmara_frontal_16_mp_ram_4gb_memoria_64_gb_expandible_hasta_512_gb_red_4g_lte__octacore_18ghz_16_ghz_android_90_pie_batera_4000mahreconocimiento_facial_escaner_de_huellas__dimensiones_1585_x_747_x_77_mm_peso_166gr_diseo_impresionante_pantalla_infinita_asistente_personal_bixby_garanta_un_ao_0001" alt="" width="150px" height="170px">
             <p>Precio: 10 Bs</p>
-            <button class="agregar-carrito">Agregar al Carrito</button>
+            <input type="number" class="cantidad" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Producto 1" data-precio="10">Agregar al Carrito</button>
         </div>
         <div class="producto">
                 <h2>Producto 2</h2>
                 <img src="https://www.tiendaamiga.com.bo/media/catalog/product/cache/deb88dadd509903c96aaa309d3e790dc/c/e/celular_xiaomi_redmi_note_11s-6gb_de_ram_128_gb_alm-gris_grafito_ta.jpg" alt="" width="150px" height="170px">
                 <p>Precio: 50 Bs</p>
-                <button class="agregar-carrito">Agregar al Carrito</button>
+                <input type="number" class="cantidad" value="1" min="1">
+                <button class="agregar-carrito" data-nombre="Producto 2" data-precio="50">Agregar al Carrito</button>
         </div>
         <div class="producto">
                 <h2>Producto 3</h2>
                 <img src="https://www.tiendaamiga.com.bo/media/catalog/product/cache/deb88dadd509903c96aaa309d3e790dc/c/e/celular_xiaomi_redmi_note_11s-6gb_de_ram_128_gb_alm-gris_grafito_ta.jpg" alt=""  width="150px" height="170px">
                 <p>Precio: 100 Bs</p>
-                <button class="agregar-carrito">Agregar al Carrito</button>
+                <input type="number" class="cantidad" value="1" min="1">
+                <button class="agregar-carrito" data-nombre="Producto 3" data-precio="100">Agregar al Carrito</button>
         </div>
         <div class="producto">
                 <h2>Producto 4</h2>
                 <img src="https://www.tiendaamiga.com.bo/media/catalog/product/cache/deb88dadd509903c96aaa309d3e790dc/c/e/celular_xiaomi_redmi_note_11s-6gb_de_ram_128_gb_alm-gris_grafito_ta.jpg" alt=""  width="150px" height="170px">
                 <p>Precio: 108 Bs</p>
-                <button class="agregar-carrito">Agregar al Carrito</button>
+                <input type="number" class="cantidad" value="1" min="1">
+                <button class="agregar-carrito" data-nombre="Producto 4" data-precio="108">Agregar al Carrito</button>
         </div>
         <div class="producto">
                 <h2>Producto 5</h2>
                 <img src="https://www.tiendaamiga.com.bo/media/catalog/product/cache/deb88dadd509903c96aaa309d3e790dc/c/e/celular_xiaomi_redmi_note_11s-6gb_de_ram_128_gb_alm-gris_grafito_ta.jpg" alt=""  width="150px" height="170px">
                 <p>Precio: 90 Bs</p>
-                <button class="agregar-carrito">Agregar al Carrito</button>
+                <input type="number" class="cantidad" value="1" min="1">
+                <button class="agregar-carrito" data-nombre="Producto 5" data-precio="90">Agregar al Carrito</button>
         </div>
 
         <div class="carrito">
             <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito">
+                <!--SE MOSTRARA LOS PRODUCTOS AGREGADOS -->
+
+            </ul>
             <p>Productos Agregados: 
                 <span id="contador">0</span>
             </p>
+            <p>Total a Pagar: Bs <span id="total">0</span> </p>
         </div>
         
     </div>

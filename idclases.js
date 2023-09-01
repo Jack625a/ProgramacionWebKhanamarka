@@ -1,11 +1,62 @@
 const botonesAgregar=document.querySelectorAll('.agregar-carrito');
+const listacarrito=document.getElementById('lista-carrito')
 const contadorAgregados=document.getElementById('contador');
+const totalHTMl=document.getElementById('total');
 
+//let totalPagar=0;
 let contador=0;
-botonesAgregar.forEach((boton)=>
+//Crear la lista del carrito
+const carrito=[];
+
+botonesAgregar.forEach((boton,index)=>
 {
     boton.addEventListener('click',()=>{
         contador++;
-        contadorAgregados.textContent=contador;
-    });
+        const cantidadInput=boton.previousElementSibling;
+        const cantidad=parseInt(cantidadInput.value);
+        if(!isNaN (cantidad)&& cantidad>0){
+            const nombre=boton.dataset.nombre;
+            const precio=boton.dataset.precio;
+            const producto={
+                nombre:nombre,
+                precio:precio,
+                cantidad:cantidad
+            };
+            carrito.push(producto);
+                
+            contador+=cantidad;
+            contadorAgregados.textContent=contador;
+        }
+         mostrarcarrito();
+    }); 
 });
+
+//Funcion para mostrar el carrito
+function mostrarcarrito(){
+    listacarrito.innerHTML='';
+    //Variable para controlar el total
+    let totalPagar=0;
+
+    carrito.forEach((producto,index)=>
+    {
+        const elementoLista=document.createElement('li');
+        elementoLista.innerHTML=`${producto.nombre} - Precio: ${producto.precio}Bs <button class="eliminar-producto" data-index="${index} ">Eliminar</button> <br>`;
+        listacarrito.appendChild(elementoLista);   
+        totalPagar+=producto.cantidad*producto.precio;
+    });
+    totalHTMl.textContent=totalPagar.toFixed(2);
+
+
+const botonEliminar=document.querySelectorAll('.eliminar-producto');
+
+botonEliminar.forEach((boton)=>{
+boton.addEventListener('click',(event)=>{
+        const index=event.target.dataset.index;
+        carrito.splice(index, 1);
+        contador--;
+        contadorAgregados.textContent=contador;
+        mostrarcarrito();
+        });
+    });
+}
+

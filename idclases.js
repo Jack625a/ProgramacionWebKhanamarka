@@ -3,6 +3,7 @@ const listacarrito = document.getElementById('lista-carrito');
 const contadorAgregados = document.getElementById('contador');
 const totalHTMl = document.getElementById('total');
 
+
 let contador = 0;
 const carrito = [];
 
@@ -81,6 +82,13 @@ formularioCompra.addEventListener('submit', (event) => {
         </ul>
         <p>Precio Total: Bs ${precioTotal}</p>
         <p>¡Gracias por su compra!</p>
+        <button id="boton-imprimir">Imprimir Detalla</button>
+        <script>
+            const botonImprimir=document.getElementById('boton-imprimir');
+            botonImprimir.addEventListener('click',()=>{
+                window.print();
+            });
+        </script>
     `;
 
     const nuevaVentana = window.open('', '_blank', 'width=400,height=400');
@@ -90,3 +98,22 @@ formularioCompra.addEventListener('submit', (event) => {
 
     formularioEmergente.style.display = 'none';
 });
+
+/*let slideIndex=0;
+const slides=document.querySelectorAll('.slide');
+function showSlide(n){
+    if(n<0){
+        slideIndex=slides.length-1;
+    }
+    if(n>=slides.length){
+        slideIndex=0;
+    }
+    slides.forEach(slide) => {
+        slides.style.display='none';
+    };
+    slides[slideIndex].style.display='block';
+    slideIndex++;
+    setTimeout(showSlide,3000)
+};
+showSlide(0)*/
+

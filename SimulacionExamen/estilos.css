@@ -1,0 +1,76 @@
+body {
+    background-color: aquamarine;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    background-color: rgb(14, 14, 14);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin-right: 35px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16pt;
+}
+/*ID= # --- CLASES .*/
+#perfil{
+    color: darkgoldenrod;
+    margin-left: 500px;
+}
+nav ul li a:hover{
+    background-color: darkorange;
+    color: black;
+}
+#perfil:hover{
+    background-color: #fff;
+    color: black;
+}
+.contenedorImagen{
+    text-align: center;
+    background-color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.contenedorImagen img{
+    width: 50%;
+    height: 300px;
+}
+.contenedorImagen p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    text-align: justify;
+    width: 50%;
+}
+.contenedorVideo{
+    text-align: center;
+}
+.contenedorFormulario{
+    text-align: justify;
+    width: 80%;
+}
+.contenedorFormulario form label{
+    font-size: 16pt;
+    padding: 10px 25px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+#boton{
+    background-color: rgb(25, 25, 101);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+#boton:hover{
+    background-color: black;
+}

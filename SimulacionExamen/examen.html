@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacion Examen</title>
+    <!--Agregar los estilos CSS o Bootstrap-->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!--Ingresar la Navegacion-->
+    <header>
+     
+        <nav>
+            <ul>
+                <li><a href="examen.html">Inicio</a></li>
+                <li><a href="#">Imagenes</a></li>
+                <li><a href="#">Videos</a></li>
+                <li ><a id="perfil" href="#">Perfil</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <!--Contenido de la Pagina Web-->
+    <div class="contenedorImagen">
+        <h1>
+          EXAMEN PROGRAMACION WEB I  
+        </h1>
+        <img src="https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/html-tagst.jpg" alt="">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+    <div class="contenedorVideo">
+        <h1>Seccion 2</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8tFa7f3ZdJk?si=ykjOukyn-Xz0fpfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!--Insertar Formulario-->
+    <div class="contenedorFormulario">
+        <h2>Formulario Registro</h2>
+        <form>
+            <label for="nombre">Nombre Completo: </label>
+            <input type="text" name="nombre" id="nombre" required>
+            <br>
+            <label for="correo">Correo: </label>
+            <input type="email" name="correo" id="correo" required>
+            <br>
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+            <br>
+            <label for="celular">Celular</label>
+            <input type="tel" name="celular" id="celular" required>
+            <br>
+           <!--<input type="submit" value="Enviar">--> 
+           <input type="button" id="boton" value="Enviar" onclick="validarFormulario()"> 
+        </form>
+    </div>
+      
+</body>
+<script src="script.js"></script>
+</html>

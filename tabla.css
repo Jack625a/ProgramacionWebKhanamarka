@@ -1,0 +1,12 @@
+h1{
+    font-size: 50;
+    font-style: italic;
+    font-weight: bold;
+    color: blueviolet;
+}
+.tabla-C{
+    background-color: chartreuse
+}
+#tabla{
+    background-color: cyan;
+}
